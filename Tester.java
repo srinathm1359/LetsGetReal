@@ -65,5 +65,13 @@ public class Tester {
     System.out.println(sixEighths.getNumerator());
     System.out.println(negativeThreeFourths.getNumerator());
     System.out.println(Three.getNumerator());
+    //Testing getDenominator() for RationalNumber()
+    System.out.println("\nTesting getDenominator() for RationalNumber()");
+    System.out.println(OneRational.getDenominator());
+    System.out.println(overZero.getDenominator());
+    System.out.println(threeFourths.getDenominator());
+    System.out.println(sixEighths.getDenominator());
+    System.out.println(negativeThreeFourths.getDenominator());
+    System.out.println(Three.getDenominator());
   }
 }
