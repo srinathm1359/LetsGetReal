@@ -56,8 +56,18 @@ public class RationalNumber extends RealNumber
   */
   private static int gcd(int a, int b){
     /*use euclids method or a better one*/
-    http://sites.math.rutgers.edu/~greenfie/gs2004/euclid.html
-    return 0;
+    /*http://sites.math.rutgers.edu/~greenfie/gs2004/euclid.html*/
+    //First make a and b nonnegative integers
+    if (a < 0) {
+      a = -a;
+    }
+    if (b < 0) {
+      b = -b;
+    }
+    if (a == 0) {
+      return b;
+    }
+    return (gcd(b%a,a));
   }
 
   /**
@@ -95,4 +105,4 @@ public class RationalNumber extends RealNumber
   public RationalNumber subtract(RationalNumber other){
     return null;
   }
-} 
+}
