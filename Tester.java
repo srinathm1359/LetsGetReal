@@ -17,5 +17,9 @@ public class Tester {
     System.out.println(One.add(alsoOne));
     System.out.println(One.add(notOne));
     System.out.println(One.add(newReal1));
+    //Testing multiply() for RealNumber()
+    System.out.println(One.multiply(alsoOne));
+    System.out.println(notOne.multiply(alsoOne));
+    
   }
 }
