@@ -61,7 +61,13 @@ public class RealNumber{
   *this divided by the other
   */
   public RealNumber divide(RealNumber other){
-        return null;
+    double otherValue = other.getValue();
+    if (otherValue != 0) {
+      RealNumber ratio = new RealNumber(value/otherValue);
+      return ratio;
+    } else {
+      throw new RuntimeException("Error: Cannot divide by 0");
+    }
   }
 
   /*
