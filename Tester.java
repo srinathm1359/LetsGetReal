@@ -22,6 +22,11 @@ public class Tester {
     System.out.println(notOne.multiply(alsoOne));
     //Testing divide() for RealNumber()
     System.out.println(One.divide(alsoOne));
-    System.out.println(One.divide(newReal1));
+    //System.out.println(One.divide(newReal1));
+    //Throws RuntimeException
+    //Testing subtract() for RealNumber()
+    System.out.println(One.subtract(nonZero));
+    System.out.println(One.subtract(newReal1));
+    System.out.println(alsoOne.subtract(notOne));
   }
 }
