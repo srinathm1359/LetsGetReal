@@ -89,5 +89,12 @@ public class Tester {
     System.out.println("\nTesting multiply() for RationalNumber()");
     System.out.println(threeFourths.multiply(negativeThreeFourths));
     System.out.println(Three.multiply(OneRational));
+    //Testing divide() for RationalNumber()
+    System.out.println("\nTesting divide() for RationalNumber()");
+    System.out.println(threeFourths.divide(Three));
+    System.out.println(threeFourths.divide(negativeThreeFourths));
+    System.out.println(OneRational.divide(Three));
+    System.out.println(OneRational.divide(overZero));
+    System.out.println(overZero.divide(threeFourths));
   }
 }
