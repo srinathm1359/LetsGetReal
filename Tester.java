@@ -96,5 +96,11 @@ public class Tester {
     System.out.println(OneRational.divide(Three));
     System.out.println(OneRational.divide(overZero));
     System.out.println(overZero.divide(threeFourths));
+    //Testing add() for RationalNumber()
+    System.out.println("\nTesting add() for RationalNumber()");
+    RationalNumber fourSevenths = new RationalNumber(4,7);
+    System.out.println(threeFourths.add(fourSevenths));
+    System.out.println(negativeThreeFourths.add(fourSevenths));
+    System.out.println(OneRational.add(threeFourths));
   }
 }
