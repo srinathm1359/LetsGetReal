@@ -30,6 +30,7 @@ public class Tester {
     System.out.println(One.subtract(newReal1));
     System.out.println(alsoOne.subtract(notOne));
     //Tests for RationalNumber()
+    //Testing toString() and RationalNumber()
     RationalNumber OneRational = new RationalNumber(8,8);
     RationalNumber overZero = new RationalNumber(2,0);
     RationalNumber threeFourths = new RationalNumber(3,4);
@@ -42,5 +43,12 @@ public class Tester {
     System.out.println(sixEighths);
     System.out.println(negativeThreeFourths);
     System.out.println(Three);
+    //Testing getValue()
+    System.out.println(OneRational.getValue());
+    System.out.println(overZero.getValue());
+    System.out.println(threeFourths.getValue());
+    System.out.println(sixEighths.getValue());
+    System.out.println(negativeThreeFourths.getValue());
+    System.out.println(Three.getValue());
   }
 }
