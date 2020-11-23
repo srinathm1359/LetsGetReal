@@ -13,5 +13,9 @@ public class Tester {
     System.out.println(nonZero.equals(notOne));//false
     System.out.println(nonZero.equals(One));//true
     System.out.println(nonZero.equals(alsoOne));//true
+    //Testing add() for RealNumber()
+    System.out.println(One.add(alsoOne));
+    System.out.println(One.add(notOne));
+    System.out.println(One.add(newReal1));
   }
 }
