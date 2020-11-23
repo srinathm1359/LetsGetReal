@@ -20,6 +20,8 @@ public class Tester {
     //Testing multiply() for RealNumber()
     System.out.println(One.multiply(alsoOne));
     System.out.println(notOne.multiply(alsoOne));
-    
+    //Testing divide() for RealNumber()
+    System.out.println(One.divide(alsoOne));
+    System.out.println(One.divide(newReal1));
   }
 }
