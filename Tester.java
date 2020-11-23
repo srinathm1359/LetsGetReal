@@ -102,5 +102,10 @@ public class Tester {
     System.out.println(threeFourths.add(fourSevenths));
     System.out.println(negativeThreeFourths.add(fourSevenths));
     System.out.println(OneRational.add(threeFourths));
+    //Testing subtract() for RationalNumber()
+    System.out.println("\nTesting subtract() for RationalNumber()");
+    System.out.println(threeFourths.subtract(fourSevenths));
+    System.out.println(negativeThreeFourths.subtract(fourSevenths));
+    System.out.println(OneRational.subtract(threeFourths));
   }
 }
