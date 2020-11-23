@@ -1,5 +1,6 @@
 public class Tester {
   public static void main(String[] args) {
+    //Tests for RealNumber()
     //Testing equals() for RealNumber()
     RealNumber newReal1 = new RealNumber(0.0);
     RealNumber newReal2 = new RealNumber(0.0);
@@ -28,5 +29,18 @@ public class Tester {
     System.out.println(One.subtract(nonZero));
     System.out.println(One.subtract(newReal1));
     System.out.println(alsoOne.subtract(notOne));
+    //Tests for RationalNumber()
+    RationalNumber OneRational = new RationalNumber(8,8);
+    RationalNumber overZero = new RationalNumber(2,0);
+    RationalNumber threeFourths = new RationalNumber(3,4);
+    RationalNumber sixEighths = new RationalNumber(6,8);
+    RationalNumber negativeThreeFourths = new RationalNumber(3,-4);
+    RationalNumber Three = new RationalNumber(9,3);
+    System.out.println(OneRational);
+    System.out.println(overZero);
+    System.out.println(threeFourths);
+    System.out.println(sixEighths);
+    System.out.println(negativeThreeFourths);
+    System.out.println(Three);
   }
 }
