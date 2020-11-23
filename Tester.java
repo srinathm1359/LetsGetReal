@@ -107,5 +107,12 @@ public class Tester {
     System.out.println(threeFourths.subtract(fourSevenths));
     System.out.println(negativeThreeFourths.subtract(fourSevenths));
     System.out.println(OneRational.subtract(threeFourths));
+    //Test operations with a RealNumber and a RationalNumber
+    RealNumber testReal = new RealNumber(7.82);
+    System.out.println("\nTest operations with a RealNumber and a RationalNumber");
+    System.out.println(testReal.add(threeFourths));
+    System.out.println(testReal.multiply(threeFourths));
+    System.out.println(testReal.divide(threeFourths));
+    System.out.println(testReal.subtract(threeFourths));
   }
 }
