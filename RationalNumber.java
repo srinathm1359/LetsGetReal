@@ -16,7 +16,10 @@ public class RationalNumber extends RealNumber
     numerator = nume;
     denominator = deno;
     this.reduce();
-
+    if (denominator == 0) {
+      denominator = 1;
+      numerator = 0;
+    }
   }
 
   public double getValue(){
