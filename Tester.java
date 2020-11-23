@@ -81,5 +81,9 @@ public class Tester {
     System.out.println(sixEighths.reciprocal());
     System.out.println(negativeThreeFourths.reciprocal());
     System.out.println(Three.reciprocal());
+    //Testing equals() for RationalNumber()
+    System.out.println("\nTesting equals() for RationalNumber()");
+    System.out.println(threeFourths.equals(sixEighths));
+    System.out.println(sixEighths.equals(OneRational));
   }
 }
