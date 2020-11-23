@@ -9,6 +9,14 @@ public class RationalNumber extends RealNumber
   */
   public RationalNumber(int nume, int deno){
     super(0.0);//this value is ignored!
+    if (deno < 0) {
+      nume = -nume;
+      deno = -deno;
+    }
+    numerator = nume;
+    denominator = deno;
+    this.reduce();
+
   }
 
   public double getValue(){
