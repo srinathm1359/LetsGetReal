@@ -6,7 +6,15 @@ public abstract class Number{
   return a positive value when this Number is larger than the other Number
   */
   public int compareTo(Number other){
-    return 0;
+    double thisValue = this.getValue();
+    double otherValue = other.getValue();
+    if (this.equals(other)) {
+      return 0;
+    } else if (thisValue <  otherValue) {
+      return -1;
+    } else {
+      return 1;
+    }
   }
 
   /*
