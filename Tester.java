@@ -114,5 +114,10 @@ public class Tester {
     System.out.println(testReal.multiply(threeFourths));
     System.out.println(testReal.divide(threeFourths));
     System.out.println(testReal.subtract(threeFourths));
+    //Test compareTo()
+    System.out.println("\nTest compareTo()");
+    System.out.println(testReal.compareTo(nonZero));
+    System.out.println(nonZero.compareTo(One));
+    System.out.println(nonZero.compareTo(notOne));
   }
 }
