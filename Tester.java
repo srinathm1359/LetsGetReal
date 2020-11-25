@@ -2,7 +2,7 @@ public class Tester {
   public static void main(String[] args) {
     //Tests for RealNumber()
     //Testing equals() for RealNumber()
-    System.out.println("\nTesting equals() for RealNumber()");
+    System.out.println("\nTesting equals() for Number()");
     RealNumber newReal1 = new RealNumber(0.0);
     RealNumber newReal2 = new RealNumber(0.0);
     RealNumber nonZero = new RealNumber(1.0);
@@ -109,11 +109,11 @@ public class Tester {
     System.out.println(OneRational.subtract(threeFourths));
     //Test operations with a RealNumber and a RationalNumber
     RealNumber testReal = new RealNumber(7.82);
-    System.out.println("\nTest operations with a RealNumber and a RationalNumber");
+    /* System.out.println("\nTest operations with a RealNumber and a RationalNumber");
     System.out.println(testReal.add(threeFourths));
     System.out.println(testReal.multiply(threeFourths));
     System.out.println(testReal.divide(threeFourths));
-    System.out.println(testReal.subtract(threeFourths));
+    System.out.println(testReal.subtract(threeFourths)); */
     //Test compareTo()
     System.out.println("\nTest compareTo()");
     System.out.println(testReal.compareTo(nonZero));
