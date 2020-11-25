@@ -6,7 +6,7 @@ public abstract class Number{
   return a positive value when this Number is larger than the other Number
   */
   public int compareTo(Number other){
-    //TO BE IMPLEMENTED
+    return 0;
   }
 
   /*
@@ -15,5 +15,21 @@ public abstract class Number{
   *Special case: if one is exactly zero, the other must be exactly zero.
   */
   public boolean equals(Number other){
-    //TO BE IMPLEMENTED  }
+    double otherValue = other.getValue();
+    double value = this.getValue();
+    if (value == 0) {
+      return (otherValue == 0);
+    }
+    if (otherValue == 0) {
+      return (value == 0);
+    }
+    else {
+      double difference = value - otherValue;
+      double ratio = 2 * difference/(value + otherValue);
+      if (ratio < 0) {
+        ratio = 0 - ratio;
+      }
+      return (ratio < 0.00001);
+    }
+  }
 }
