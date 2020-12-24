@@ -15,11 +15,11 @@ public class RationalNumber extends Number
     }
     numerator = nume;
     denominator = deno;
-    this.reduce();
     if (denominator == 0) {
       denominator = 1;
       numerator = 0;
     }
+    this.reduce();
   }
 
   public double getValue(){
