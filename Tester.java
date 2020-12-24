@@ -69,6 +69,7 @@ public class Tester {
     System.out.println(sixEighths.getNumerator());
     System.out.println(negativeThreeFourths.getNumerator());
     System.out.println(Three.getNumerator());
+    System.out.println(zeroOverZero.getNumerator());
     //Testing getDenominator() for RationalNumber()
     System.out.println("\nTesting getDenominator() for RationalNumber()");
     System.out.println(OneRational.getDenominator());
@@ -77,6 +78,7 @@ public class Tester {
     System.out.println(sixEighths.getDenominator());
     System.out.println(negativeThreeFourths.getDenominator());
     System.out.println(Three.getDenominator());
+    System.out.println(zeroOverZero.getDenominator());
     //Testing reciprocal() for RationalNumber()
     System.out.println("\nTesting reciprocal() for RationalNumber()");
     System.out.println(OneRational.reciprocal());
