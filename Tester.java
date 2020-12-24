@@ -43,12 +43,15 @@ public class Tester {
     RationalNumber sixEighths = new RationalNumber(6,8);
     RationalNumber negativeThreeFourths = new RationalNumber(3,-4);
     RationalNumber Three = new RationalNumber(9,3);
+    RationalNumber zeroOverZero = new RationalNumber(0,0);
+    RationalNumber zero = new RationalNumber(0,1);
     System.out.println(OneRational);
     System.out.println(overZero);
     System.out.println(threeFourths);
     System.out.println(sixEighths);
     System.out.println(negativeThreeFourths);
     System.out.println(Three);
+    System.out.println(zeroOverZero);
     //Testing getValue() for RationalNumber()
     System.out.println("\nTesting getValue() for RationalNumber()");
     System.out.println(OneRational.getValue());
@@ -57,6 +60,7 @@ public class Tester {
     System.out.println(sixEighths.getValue());
     System.out.println(negativeThreeFourths.getValue());
     System.out.println(Three.getValue());
+    System.out.println(zeroOverZero.getValue());
     //Testing getNumerator() for RationalNumber()
     System.out.println("\nTesting getNumerator() for RationalNumber()");
     System.out.println(OneRational.getNumerator());
@@ -89,6 +93,8 @@ public class Tester {
     System.out.println("\nTesting multiply() for RationalNumber()");
     System.out.println(threeFourths.multiply(negativeThreeFourths));
     System.out.println(Three.multiply(OneRational));
+    System.out.println(overZero.multiply(Three));
+    System.out.println(threeFourths.multiply(overZero));
     //Testing divide() for RationalNumber()
     System.out.println("\nTesting divide() for RationalNumber()");
     System.out.println(threeFourths.divide(Three));
@@ -99,6 +105,8 @@ public class Tester {
     //Testing add() for RationalNumber()
     System.out.println("\nTesting add() for RationalNumber()");
     RationalNumber fourSevenths = new RationalNumber(4,7);
+    RationalNumber divByZero = new RationalNumber(8,0);
+    System.out.println(divByZero.add(fourSevenths));
     System.out.println(threeFourths.add(fourSevenths));
     System.out.println(negativeThreeFourths.add(fourSevenths));
     System.out.println(OneRational.add(threeFourths));
